@@ -829,7 +829,7 @@ const ScavengerHuntDetail = () => {
                                 </h5>
                                 <p className="text-lg font-serif italic text-white/80 leading-relaxed">
                                     "My birthday was the day we were supposed to meet for the assignment's photo session. We didn't have much time to submit. 
-                                    My teammates were worried about asking me to forgot my special date, but we reached an understanding. They surprised me with a cake that day! 
+                                    My teammates were worried about asking me to forget my special date, but we reached an understanding. They surprised me with a cake that day! 
                                     Disputes should be settled peacefully rather than into serious conflicts."
                                 </p>
                             </div>
