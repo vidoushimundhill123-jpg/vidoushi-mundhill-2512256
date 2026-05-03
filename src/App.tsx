@@ -66,13 +66,13 @@ type Page = 'home' | 'aboutMe' | 'achievements' | 'projects' | 'reflection' | 'c
 const Nav = ({ currentPage, setPage }: { currentPage: Page, setPage: (p: Page) => void }) => {
   const [isOpen, setIsOpen] = useState(false);
   const menuItems: { id: Page; label: string }[] = [
-    { id: 'home', label: 'home' },
-    { id: 'aboutMe', label: 'about me' },
-    { id: 'cvResume', label: 'resume' },
-    { id: 'achievements', label: 'academic achievements/skills' },
-    { id: 'projects', label: 'projects' },
-    { id: 'reflection', label: 'reflection' },
-    { id: 'contact', label: 'contacts' },
+    { id: 'home', label: 'Home' },
+    { id: 'aboutMe', label: 'About Me' },
+    { id: 'cvResume', label: 'Curriculum Vitae' },
+    { id: 'achievements', label: 'Academic Achievements/Skills' },
+    { id: 'projects', label: 'My Projects' },
+    { id: 'reflection', label: 'Reflection' },
+    { id: 'contact', label: 'Contacts' },
   ];
 
   return (
