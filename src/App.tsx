@@ -647,49 +647,49 @@ const ScavengerHuntDetail = () => {
       title: "Divine Beauty",
       caption: "Everyone agreed that one look at THIS and you just knew that all the beauty in the world was a gift from God",
       desc: "We often take for granted small (or not so small) things that we see everyday. The beauty of the sky, nature and everything around us that we have no power over. These are definitely gifts from God.",
-      image: "/regenerated_image_1777600770888.png"
+      image: "regenerated_image_1777600770888.png"
     },
     {
       id: 2,
       title: "The Mascot",
       caption: "Maybe we could use THIS for our group mascot!",
       desc: "KUROMI - She represents the perfect balance between optimism and pessimism – just like us!",
-      image: "/regenerated_image_1777600771683.png"
+      image: "regenerated_image_1777600771683.png"
     },
     {
       id: 3,
       title: "Pure Happiness",
       caption: "Amazing! THIS is the true meaning of happiness",
       desc: "Eat to live or live to eat? One look at these and we were already in a better mood. After savoring them, we were truly happy.",
-      image: "/regenerated_image_1777600772554.png"
+      image: "regenerated_image_1777600772554.png"
     },
     {
       id: 4,
       title: "Modern Success",
       caption: "The synonym to being successful in life is THIS",
       desc: "Being successful is not solely about status, power and privileges... WE are successful because we try our best EVERYDAY to become the best version of ourselves.",
-      image: "/regenerated_image_1777600773446.png"
+      image: "regenerated_image_1777600773446.png"
     },
     {
       id: 5,
       title: "Innocence",
       caption: "THIS is what the innocence of a child represents",
       desc: "The innocence of a child is about the ability to find joy in the simplest things. Playing in a ball pit was indeed fun, and we were also able to express ourselves exactly like how we did 15 years ago.",
-      image: "/regenerated_image_1777600774062.png"
+      image: "regenerated_image_1777600774062.png"
     },
     {
       id: 6,
       title: "Obvious Ending",
       caption: "It was pretty obvious to the onlookers how THIS was going to end",
       desc: "It's been a few years now... Most of you have probably already watched one of the conjuring movies. Some of you have not, and you already know how it is going to end...",
-      image: "/regenerated_image_1777600774789.png"
+      image: "regenerated_image_1777600774789.png"
     },
     {
       id: 7,
       title: "Team Dreams",
       caption: "THIS is what our team dreams of",
       desc: "We all have tons of dreams, and that is perfectly normal! But right now, we dream of travelling to and from university by car...",
-      image: "/regenerated_image_1777600775484.png"
+      image: "regenerated_image_1777600775484.png"
     }
   ];
 
