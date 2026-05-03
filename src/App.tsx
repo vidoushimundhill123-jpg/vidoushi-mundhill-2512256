@@ -829,7 +829,7 @@ const ScavengerHuntDetail = () => {
                                 </h5>
                                 <p className="text-lg font-serif italic text-white/80 leading-relaxed">
                                     "My birthday was the day we were supposed to meet for the assignment's photo session. We didn't have much time to submit. 
-                                    My teammates were worried about asking me to forgo my special date, but we reached an understanding. They surprised me with a cake that day! 
+                                    My teammates were worried about asking me to forgot my special date, but we reached an understanding. They surprised me with a cake that day! 
                                     Disputes should be settled peacefully rather than into serious conflicts."
                                 </p>
                             </div>
@@ -908,7 +908,7 @@ const BusinessPlanDetail = () => {
           <div>
             <div className="flex items-center gap-4 mb-8">
               <div className="w-16 h-16 bg-white rounded-2xl flex items-center justify-center p-3">
-                <img src="/regenerated_image_1777600933526.png" alt="Blue Peak Logo" className="w-full h-full object-contain" />
+                <img src="regenerated_image_1777600933526.png" alt="Blue Peak Logo" className="w-full h-full object-contain" />
               </div>
               <div className="h-10 w-[1px] bg-white/20"></div>
               <span className="text-sm font-black uppercase tracking-[0.4em] text-white/50">Blue Peak Co. LTD</span>
