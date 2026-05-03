@@ -353,7 +353,7 @@ const AboutPage = () => (
               <h3 className="text-xs font-black text-white/50 uppercase tracking-widest mb-4">Professional Link</h3>
               <div className="flex items-center gap-3">
                 <Linkedin size={20} className="text-white" />
-                <a href="https://linkedin.com/in/vidoushi-mundhill-6b2a78364" target="_blank" className="font-serif font-bold italic hover:underline break-all text-sm">vidoushi-mundhill-6b2a78364</a>
+                <a href="www.linkedin.com/in/vidoushi-mundhill-9090522b4" target="_blank" className="font-serif font-bold italic hover:underline break-all text-sm">vidoushi-mundhill-6b2a78364</a>
               </div>
             </div>
           </div>
@@ -2451,7 +2451,7 @@ const ContactPage = () => (
               </div>
               <div>
                 <div className="text-sm text-slate-400 font-black uppercase tracking-widest mb-1">LinkedIn</div>
-                <a href="https://www.linkedin.com/in/vidoushi-mundhill-6b2a78364" target="_blank" className="text-lg font-black text-navy hover:text-navy-light transition-colors">Vidoushi Mundhill</a>
+                <a href="www.linkedin.com/in/vidoushi-mundhill-9090522b4" target="_blank" className="text-lg font-black text-navy hover:text-navy-light transition-colors">Vidoushi Mundhill</a>
               </div>
             </div>
           </div>
@@ -2521,7 +2521,7 @@ export default function App() {
       <footer className="py-12 bg-navy border-t border-white/5 text-white">
         <div className="max-w-7xl mx-auto px-4 text-right">
           <p className="text-white/40 text-sm font-black uppercase tracking-widest">
-            © 2026 Vidoushi Mundhill · University of Mauritius · <a href="https://www.linkedin.com/in/vidoushi-mundhill-6b2a78364" target="_blank" className="hover:text-white transition-colors">LinkedIn</a>
+            © 2026 Vidoushi Mundhill · University of Mauritius · <a href="www.linkedin.com/in/vidoushi-mundhill-9090522b4" target="_blank" className="hover:text-white transition-colors">LinkedIn</a>
           </p>
         </div>
       </footer>
