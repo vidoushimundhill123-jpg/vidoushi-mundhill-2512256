@@ -5,7 +5,6 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import emailjs from '@emailjs/browser';
 import { 
   Home, 
   User, 
@@ -66,7 +65,7 @@ type Page = 'home' | 'aboutMe' | 'achievements' | 'projects' | 'reflection' | 'c
 
 const Nav = ({ currentPage, setPage }: { currentPage: Page, setPage: (p: Page) => void }) => {
   const [isOpen, setIsOpen] = useState(false);
-  
+    };
   const menuItems: { id: Page; label: string }[] = [
     { id: 'home', label: 'Home' },
     { id: 'aboutMe', label: 'About Me' },
@@ -2459,7 +2458,7 @@ const ContactPage = () => (
           </div>
         </div>
         <div className="bg-navy p-12 rounded-[3rem] border border-navy-light/10 shadow-2xl shadow-navy/20 text-white">
-          <form onSubmit = {handleSubmit} className ="space-y-6">
+          <form className  =  className ="space-y-6">
             <div className="space-y-2">
               <label className="text-xs font-black text-white/50 uppercase tracking-widest">Name</label>
               <input type="text" className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-white placeholder:text-white/20" placeholder="Your Name" />
@@ -2484,32 +2483,7 @@ const ContactPage = () => (
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
-   const handleSubmit = async (e) => {
-    e.preventDefault();
-const handleSubmit = (e) => {
-    e.preventDefault();
-
-    const templateParams = {
-      from_name: name,    
-      from_email: email,  
-      message: message,   
-    };
-
-    emailjs.send(
-      'service_a6wxffq',    
-      'template_5sezkeu',   
-      templateParams,       
-      'gGKhqXSlwvWD_Uy82'   
-    )
-    .then((result) => {
-        alert("Message Sent! I'll get back to you soon.");
-        setName('');
-        setEmail('');
-        setMessage('');
-    }, (error) => {
-        alert("Oops! Something went wrong.");
-    });
-  }
+  
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
