@@ -65,6 +65,27 @@ type Page = 'home' | 'aboutMe' | 'achievements' | 'projects' | 'reflection' | 'c
 
 const Nav = ({ currentPage, setPage }: { currentPage: Page, setPage: (p: Page) => void }) => {
   const [isOpen, setIsOpen] = useState(false);
+   const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const templateParams = {
+      from_name: name,    // Make sure 'name' matches your variable name
+      from_email: email,  // Make sure 'email' matches your variable name
+      message: message,   // Make sure 'message' matches your variable name
+    };
+
+    emailjs.send(
+      'service_a6wxffq', 
+      'template_5sezkeu', 
+      templateParams, 
+      'gGKhqXSluvWD_Uy82'
+    )
+    .then((result) => {
+        alert("Message Sent! I'll get back to you soon.");
+    }, (error) => {
+        alert("Oops! Something went wrong.");
+    });
+  };
   const menuItems: { id: Page; label: string }[] = [
     { id: 'home', label: 'Home' },
     { id: 'aboutMe', label: 'About Me' },
@@ -2457,7 +2478,7 @@ const ContactPage = () => (
           </div>
         </div>
         <div className="bg-navy p-12 rounded-[3rem] border border-navy-light/10 shadow-2xl shadow-navy/20 text-white">
-          <form className="space-y-6">
+          <form onSubmit = {handleSubmit} className ="space-y-6">
             <div className="space-y-2">
               <label className="text-xs font-black text-white/50 uppercase tracking-widest">Name</label>
               <input type="text" className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-white placeholder:text-white/20" placeholder="Your Name" />
@@ -2470,7 +2491,7 @@ const ContactPage = () => (
               <label className="text-xs font-black text-white/50 uppercase tracking-widest">Message</label>
               <textarea rows={4} className="w-full bg-white/10 border border-white/10 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-white/20 transition-all text-white placeholder:text-white/20" placeholder="Hello Vidoushi..."></textarea>
             </div>
-            <button type="button" className="w-full py-4 bg-white text-navy rounded-xl font-black uppercase tracking-widest hover:bg-slate-100 transition-colors shadow-lg">
+            <button type="submit" className="w-full py-4 bg-white text-navy rounded-xl font-black uppercase tracking-widest hover:bg-slate-100 transition-colors shadow-lg">
               Send Message
             </button>
           </form>
