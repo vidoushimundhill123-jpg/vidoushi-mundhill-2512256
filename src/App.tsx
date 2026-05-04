@@ -66,26 +66,7 @@ type Page = 'home' | 'aboutMe' | 'achievements' | 'projects' | 'reflection' | 'c
 
 const Nav = ({ currentPage, setPage }: { currentPage: Page, setPage: (p: Page) => void }) => {
   const [isOpen, setIsOpen] = useState(false);
-   const handleSubmit = async (e) => {
-    e.preventDefault();
 
-    const templateParams = {
-      from_name: name,    // Make sure 'name' matches your variable name
-      from_email: email,  // Make sure 'email' matches your variable name
-      message: message,   // Make sure 'message' matches your variable name
-    };
-
-    emailjs.send(
-      'service_a6wxffq', 
-      'template_5sezkeu', 
-      templateParams, 
-      'gGKhqXSluvWD_Uy82'
-    )
-    .then((result) => {
-        alert("Message Sent! I'll get back to you soon.");
-    }, (error) => {
-        alert("Oops! Something went wrong.");
-    });
   };
   const menuItems: { id: Page; label: string }[] = [
     { id: 'home', label: 'Home' },
@@ -2504,7 +2485,26 @@ const ContactPage = () => (
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<Page>('home');
+   const handleSubmit = async (e) => {
+    e.preventDefault();
 
+    const templateParams = {
+      from_name: name,    // Make sure 'name' matches your variable name
+      from_email: email,  // Make sure 'email' matches your variable name
+      message: message,   // Make sure 'message' matches your variable name
+    };
+
+    emailjs.send(
+      'service_a6wxffq', 
+      'template_5sezkeu', 
+      templateParams, 
+      'gGKhqXSluvWD_Uy82'
+    )
+    .then((result) => {
+        alert("Message Sent! I'll get back to you soon.");
+    }, (error) => {
+        alert("Oops! Something went wrong.");
+    });
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [currentPage]);
