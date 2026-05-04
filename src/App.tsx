@@ -66,7 +66,7 @@ type Page = 'home' | 'aboutMe' | 'achievements' | 'projects' | 'reflection' | 'c
 
 const Nav = ({ currentPage, setPage }: { currentPage: Page, setPage: (p: Page) => void }) => {
   const [isOpen, setIsOpen] = useState(false);
-  };
+  
   const menuItems: { id: Page; label: string }[] = [
     { id: 'home', label: 'Home' },
     { id: 'aboutMe', label: 'About Me' },
